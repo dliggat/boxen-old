@@ -9,6 +9,11 @@ GITHUBTARBALL
     dnsmasq (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-dropbox
+  specs:
+    dropbox (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
     gcc (1.0.0)
@@ -66,6 +71,7 @@ GITHUBTARBALL
 DEPENDENCIES
   boxen (= 2.1.0)
   dnsmasq (= 1.0.0)
+  dropbox (= 1.0.0)
   gcc (= 1.0.0)
   git (= 1.2.2)
   homebrew (= 1.1.2)
