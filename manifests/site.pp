@@ -58,7 +58,25 @@ node default {
   include hub
   include nginx
 
+  # Optional/custom modules.
+
+  include alfred
+  include chrome
   include dropbox
+  include firefox
+  include fitbit
+  include gitx
+  include heroku
+  include imagemagick
+  include iterm2::stable
+  include onepassword
+  include redis
+  include skype
+  include sublime_text_2
+  include textwrangler
+  include transmission
+  include xquartz
+
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
