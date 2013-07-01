@@ -77,6 +77,11 @@ node default {
   include transmission
   include xquartz
 
+  include osx::dock::2d
+  include osx::finder::show_all_on_desktop
+  include osx::finder::unhide_library
+  include osx::global::expand_print_dialog
+  include osx::global::expand_save_dialog
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
