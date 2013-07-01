@@ -75,6 +75,8 @@ node default {
   include sublime_text_2
   include textwrangler
   include transmission
+  include vim
+  include wget
   include xquartz
 
   include osx::dock::2d
