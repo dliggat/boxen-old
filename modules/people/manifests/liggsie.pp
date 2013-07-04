@@ -5,6 +5,7 @@ class people::liggsie {
   include people::liggsie::params
  
   include people::liggsie::applications::main
+  include people::liggsie::applications::sublime_text_2
 
   include people::liggsie::config::dotfiles
   include people::liggsie::config::loginitems
