@@ -58,26 +58,7 @@ node default {
   include hub
   include nginx
 
-  # Optional/custom modules.
-
-  include alfred
-  include chrome
-  include dropbox
-  include firefox
-  include fitbit
-  include gitx
-  include heroku
-  include imagemagick
-  include iterm2::stable
-  include onepassword
-  include redis
-  include skype
-  include sublime_text_2
-  include textwrangler
-  include transmission
-  include vim
-  include wget
-  include xquartz
+  # Optional/custom modules: See people/manifests/liggsie/applications/main.pp
 
   include osx::dock::2d
   include osx::global::expand_print_dialog
