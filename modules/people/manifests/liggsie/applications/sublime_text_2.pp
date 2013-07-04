@@ -18,7 +18,7 @@ class people::liggsie::applications::sublime_text_2 (
       provider => 'shell',
       creates  => "/Users/${::luser}/${packagedir}${pkgname}",
       path     => "${boxen::config::homebrewdir}/bin",
-      require  => [Package['SublimeText2'], Class['git']],
+      #require  => [Package[sublime_text_2], Class['git']],  # TODO: fix me. This dependency specification should work.
     }
   }
 
@@ -38,7 +38,12 @@ class people::liggsie::applications::sublime_text_2 (
 
   addpkg {
     [
-      "kemayo/sublime-text-2-git",
+     "alienhard/SublimeAllAutocomplete",
+     "davidrios/jade-tmbundle",
+     "kemayo/sublime-text-2-git",
+     "sass-textmate-bundle",
+     "SublimeText/jQuery",
+     "wbond/sublime_package_control"
     ]:
   }
 
