@@ -12,9 +12,8 @@ class people::liggsie::config::dotfiles (
     'core.editor':      value => 'vim';
     'color.ui':         value => 'true';
 
-
     # Aliases
-    #'alias.lp':         value => 'log -p';
+    'alias.s':         value => 'status';
     #'alias.snapshot':   value => '!git stash save "snapshot: $(date)" && git stash apply "stash@{0}"';
     #'alias.ours':       value => '"!f() { git checkout --ours $@ && git add $@; }; f"';
     #'alias.theirs':     value => '"!f() { git checkout --theirs $@ && git add $@; }; f"';
