@@ -21,5 +21,3 @@ class people::liggsie::config::osx {
   include osx_config::textedit
   include osx_config::timemachine
 }
-
-
