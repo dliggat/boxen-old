@@ -10,8 +10,6 @@ class people::liggsie::config::osx {
     command => 'systemsetup -setrestartfreeze on',
   }
 
-  #include osx_config::animations
-  #include osx_config::dashboard
   include osx_config::desktop
   include osx_config::dock
   include osx_config::finder
@@ -21,7 +19,7 @@ class people::liggsie::config::osx {
   include osx_config::screen
   include osx_config::system
   include osx_config::textedit
-  #include osx_config::timemachine
+  include osx_config::timemachine
 }
 
 
