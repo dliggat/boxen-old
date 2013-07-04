@@ -80,8 +80,6 @@ node default {
   include xquartz
 
   include osx::dock::2d
-  include osx::finder::show_all_on_desktop
-  include osx::finder::unhide_library
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
 
@@ -114,5 +112,9 @@ node default {
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
     target => $boxen::config::repodir
+  }
+
+  exec { 'kill-dock':
+    command     => 'killall Dock'
   }
 }
