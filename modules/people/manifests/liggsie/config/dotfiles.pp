@@ -46,4 +46,10 @@ class people::liggsie::config::dotfiles (
     require => Repository["dotfiles"],
   }
 
+  file { "${my_homedir}/.gitignore":
+    ensure  => link,
+    target  => "${my_sourcedir}/dotfiles/gitignore",
+    require => Repository["dotfiles"],
+  }
+
 }
