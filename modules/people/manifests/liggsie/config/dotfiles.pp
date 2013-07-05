@@ -58,4 +58,10 @@ class people::liggsie::config::dotfiles (
     require => Repository["dotfiles"],
   }
 
+  file { "${my_homedir}/.synergy.conf":
+    ensure  => link,
+    target  => "${my_sourcedir}/dotfiles/synergy.conf",
+    require => Repository["dotfiles"],
+  }
+
 }

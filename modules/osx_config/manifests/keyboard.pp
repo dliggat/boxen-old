@@ -16,6 +16,22 @@ class osx_config::keyboard {
       value  => 'false',
       type   => 'bool',
       user   => $::boxen_user;
+
+    'Disable accented chars on key press and hold':
+      ensure => present,
+      key    => 'ApplePressAndHoldEnabled',
+      domain => 'NSGlobalDomain',
+      value  => 'false',
+      type   => 'bool',
+      user   => $::boxen_user;
+
+    'Disable autocorrect':
+      ensure => present,
+      key    => 'NSAutomaticSpellingCorrectionEnabled',
+      domain => 'NSGlobalDomain',
+      value  => 'false',
+      type   => 'bool',
+      user   => $::boxen_user;
   }
 
 }
