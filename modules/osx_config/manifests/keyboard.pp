@@ -25,13 +25,6 @@ class osx_config::keyboard {
       type   => 'bool',
       user   => $::boxen_user;
 
-    'Disable autocorrect':
-      ensure => present,
-      key    => 'NSAutomaticSpellingCorrectionEnabled',
-      domain => 'NSGlobalDomain',
-      value  => 'false',
-      type   => 'bool',
-      user   => $::boxen_user;
   }
 
 }
