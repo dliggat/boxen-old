@@ -20,4 +20,12 @@ class people::liggsie::applications::main {
   include vmware_fusion
   include wget
   include xquartz
+
+  # Homebrew Packages
+  package {
+    [
+      'heroku-toolbelt',
+      'synergy'
+    ]:
+  }
 }

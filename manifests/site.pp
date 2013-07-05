@@ -82,7 +82,7 @@ node default {
   include ruby::1_8_7
   include ruby::2_0_0
 
-  # common, useful packages
+  # Homebrew Packages
   package {
     [
       'ack',
