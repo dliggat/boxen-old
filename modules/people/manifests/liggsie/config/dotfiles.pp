@@ -52,4 +52,10 @@ class people::liggsie::config::dotfiles (
     require => Repository["dotfiles"],
   }
 
+  file { "${my_homedir}/Library/Preferences/com.googlecode.iterm2.plist":
+    ensure  => link,
+    target  => "${my_sourcedir}/dotfiles/plists/com.googlecode.iterm2.plist",
+    require => Repository["dotfiles"],
+  }
+
 }
