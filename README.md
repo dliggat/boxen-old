@@ -24,13 +24,13 @@ TODO: I haven't actually done this yet, so this section needs tweaking.
 
 * Install XCode, and the XCode Command Line Tools (necessary to bootstrap everything else)
 * Make a new `/opt/boxen/repo` and clone it:
-
-  * `sudo mkdir -p /opt/boxen`
-  * `sudo chown ${USER}:staff /opt/boxen`
-  * `git clone https://github.com/liggsie/boxen.git /opt/boxen/repo`
-  * `cd /opt/boxen/repo`
-  * `script/boxen`
-
+```
+sudo mkdir -p /opt/boxen
+sudo chown ${USER}:staff /opt/boxen
+git clone https://github.com/liggsie/boxen.git /opt/boxen/repo
+cd /opt/boxen/repo
+script/boxen
+```
 * May need to `git pull` the dotfiles directory (Will be stored in `~/src/dotfiles`). Regardless the boxen command will set up the symnbolic links.
 * Restart the machine - may be necessary to update the Dock, Finder, mouse settings, etc.
 * Install Mac App Store stuff.
