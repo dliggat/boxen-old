@@ -24,13 +24,13 @@ TODO: I haven't actually done this yet, so this section needs tweaking.
 
 * Install XCode, and the XCode Command Line Tools (necessary to bootstrap everything else)
 * Make a new `/opt/boxen/repo` and clone it:
-```
-sudo mkdir -p /opt/boxen
-sudo chown ${USER}:staff /opt/boxen
-git clone https://github.com/liggsie/boxen.git /opt/boxen/repo
-cd /opt/boxen/repo
-script/boxen
-```
+
+  * `sudo mkdir -p /opt/boxen`
+  * `sudo chown ${USER}:staff /opt/boxen`
+  * `git clone https://github.com/liggsie/boxen.git /opt/boxen/repo`
+  * `cd /opt/boxen/repo`
+  * `script/boxen`
+
 * May need to `git pull` the dotfiles directory (Will be stored in `~/src/dotfiles`). Regardless the boxen command will set up the symnbolic links.
 * Restart the machine - may be necessary to update the Dock, Finder, mouse settings, etc.
 * Install Mac App Store stuff.
@@ -39,9 +39,8 @@ script/boxen
 
 * Don't download the dmg like an idiot.
 * Edit the Puppetfile (`1.1.1` refers to a git tag from the github.com/boxen package)
-```
-github "firefox",        "1.1.1"
-```
+  * `github "firefox",        "1.1.1"`
+
 * Include firefox in `modules/people/manifests/liggsie/applications/main.pp`:
 ```
 class people::liggsie::applications::main {
@@ -60,4 +59,6 @@ See [FAQ](https://github.com/boxen/our-boxen/blob/master/docs/faq.md).
 
 Use Issues or #boxen on irc.freenode.net.
 
-_Special thanks to @ndhoule, [whose public boxen](https://github.com/ndhoule/my-boxen) I've made a pretty heavy borrowing of._
+## Credit
+
+Special thanks to @ndhoule, [whose public boxen](https://github.com/ndhoule/my-boxen) I've made a pretty heavy borrowing of.
