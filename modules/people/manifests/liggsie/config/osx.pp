@@ -15,6 +15,7 @@ class people::liggsie::config::osx {
   include osx_config::finder
   include osx_config::keyboard
   include osx_config::missioncontrol
+  include osx_config::mouse
   include osx_config::safari
   include osx_config::screen
   include osx_config::system
