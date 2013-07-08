@@ -25,6 +25,7 @@ class people::liggsie::applications::main {
   package {
     [
       'heroku-toolbelt',
+      'pidof',
       'synergy'
     ]:
   }
