@@ -40,6 +40,14 @@ class osx_config::system {
       value  => '7',
       type   => 'int',
       user   => $::boxen_user;
+
+    'Set 24 hour clock in menu bar':
+      ensure => present,
+      key    => 'DateFormat',
+      domain => 'com.apple.menuextra.clock',
+      value  => 'HH:mm',
+      type   => 'string',
+      user   => $::boxen_user;
   }
 
 }
