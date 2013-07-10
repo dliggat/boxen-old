@@ -23,6 +23,10 @@ class people::liggsie::applications::gems {
       ruby    => '1.9.3',
       version => '~> 2.13.0';
 
+    "debugger for 1.9.3":
+      gem     => 'debugger',
+      ruby    => '1.9.3',
+      version => '~> 1.6.1';
   }
 
 }

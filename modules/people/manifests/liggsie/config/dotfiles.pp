@@ -64,6 +64,12 @@ class people::liggsie::config::dotfiles (
     require => Repository["dotfiles"],
   }
 
+  file { "${my_homedir}/Library/Preferences/com.runningwithcrayons.Alfred-Preferences.plist":
+    ensure  => link,
+    target  => "${my_sourcedir}/dotfiles/plists/com.runningwithcrayons.Alfred-Preferences.plist",
+    require => Repository["dotfiles"],
+  }
+
   file { "${my_homedir}/.synergy.conf":
     ensure  => link,
     target  => "${my_sourcedir}/dotfiles/synergy.conf",
