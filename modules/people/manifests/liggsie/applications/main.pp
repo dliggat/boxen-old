@@ -4,7 +4,6 @@ class people::liggsie::applications::main {
   include chrome
   include dropbox
   include firefox
-  include fitbit
   include gitx
   include heroku
   include imagemagick

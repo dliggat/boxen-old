@@ -8,6 +8,14 @@ class projects::plyfe {
   #  source        => 'plyfe/plyfeme'
   #}
 
+  boxen::project { 'denny':
+    mysql         => false,
+    redis         => false,
+    ruby          => '2.0.0',
+    source        => 'plyfe/denny'
+  }
+
+
   package {
     [
       'casperjs',
